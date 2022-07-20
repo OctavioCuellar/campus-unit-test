@@ -13,9 +13,12 @@ namespace UnitTestingXUnit.Tests
         {
             // Arrange
             float expected = 5;
+            float numberA = 2;
+            float numberB = 3;
+
 
             // Act
-            float actual = calculator.Add(2, 3);
+            float actual = calculator.Add(numberA, numberB);
 
             // Assert
             Assert.Equal(expected, actual);
@@ -27,9 +30,11 @@ namespace UnitTestingXUnit.Tests
         {
             // Arrange
             float expected = 10;
+            float numberA = 15;
+            float numberB = 5;
 
             // Act
-            float actual = calculator.Sub(15, 5);
+            float actual = calculator.Sub(numberA, numberB);
 
             // Assert
             Assert.Equal(expected, actual);

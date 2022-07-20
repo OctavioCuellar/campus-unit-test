@@ -9,12 +9,14 @@ namespace UnitTestingXUnit.Tests
         public void DivideByZeroRaiseError()
         {
             // Arrange
+            int number = 100;
+            int numberZero = 0;
             Calculator calculator = new Calculator();
 
             // Act
 
             // Assert
-            Assert.Throws<DivideByZeroException>(() => calculator.Div(100, 0));
+            Assert.Throws<DivideByZeroException>(() => calculator.Div(number, numberZero));
 
         }
     }
